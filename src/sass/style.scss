@@ -1,0 +1,57 @@
+@import "./libs/normalize";
+@import "./libs/reset";
+@import "./libs/fonts";
+
+:root {
+	--white: #ffffff;
+	--gray: #f6f6f6;
+	--gray-2: #6f6f6f;
+	--black: #000000;
+	--black2: #131313;
+	--yellow: #ffdd00;
+
+	// Main color
+	--main-text-color: var(--black);
+	--main-bg-color: var(--yellow);
+
+	// Header
+	--header-background: var(--gray);
+	--header-name: var(--black);
+	--header-specialization: var(--gray-2);
+	--header-btn-bg: var(--black);
+	--header-btn-text: var(--white);
+
+	// Navigation
+	--navigation-text-color: var(--black);
+	// Experience
+	--experience-btn-text: var(--black2);
+	--experience-btn-bg: var(--black2);
+
+	// Footer
+	--footer-bg-color: var(--black);
+}
+
+* {
+	font-family: "Montserrat", sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+.container {
+	max-width: 1360px;
+	margin: 0 auto;
+	height: 100%;
+	padding: 0 64px;
+	@media (max-width: 768px) {
+		padding: 0 20px;
+	}
+}
+
+@import "./blocks/header/header";
+@import "./blocks/navigation/navigation";
+@import "./blocks/blockMain/blockMain";
+@import "./blocks/blockMain/experience-card";
+@import "./blocks/blockMain/skills";
+@import "./blocks/footer/footer";

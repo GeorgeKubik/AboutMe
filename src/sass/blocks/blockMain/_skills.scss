@@ -1,0 +1,115 @@
+.main {
+	&__skills-cards {
+		margin-top: 24px;
+		@media (max-width: 424px) {
+			margin: 0 -20px;
+		}
+	}
+	&__skills-card {
+		padding: 24px;
+		margin-top: 12px;
+		&:nth-of-type(2n - 1) {
+			background: #f6f6f6;
+			border-radius: 12px;
+		}
+		&__title__block {
+			display: inline-block;
+			padding: 6px 24px 8px 13px;
+			border-radius: 100px;
+			background: #e6e6e6;
+		}
+
+		&__title {
+			font-weight: 700;
+			font-size: 12px;
+			line-height: 100%;
+			text-transform: uppercase;
+			color: var(--main-text-color);
+		}
+		&__descr {
+			margin-top: 12px;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 150%;
+			color: var(--main-text-color);
+		}
+	}
+}
+
+.skills-layout {
+	position: relative;
+	z-index: 1;
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 70%;
+		height: 100%;
+		border-radius: 100px 0 0 100px;
+		background: var(--main-bg-color);
+		z-index: -1;
+	}
+}
+
+.skills-js {
+	position: relative;
+	z-index: 1;
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 45%;
+		height: 100%;
+		border-radius: 100px 0 0 100px;
+		background: var(--main-bg-color);
+		z-index: -1;
+	}
+}
+.skills-scss {
+	position: relative;
+	z-index: 1;
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 75%;
+		height: 100%;
+		border-radius: 100px 0 0 100px;
+		background: var(--main-bg-color);
+		z-index: -1;
+	}
+}
+.skills-react {
+	position: relative;
+	z-index: 1;
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 30%;
+		height: 100%;
+		border-radius: 100px 0 0 100px;
+		background: var(--main-bg-color);
+		z-index: -1;
+	}
+}
+
+.skills-english {
+	position: relative;
+	z-index: 1;
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 10%;
+		height: 100%;
+		border-radius: 100px 0 0 100px;
+		background: #ffdd00;
+		z-index: -1;
+	}
+}

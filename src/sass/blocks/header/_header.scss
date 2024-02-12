@@ -1,0 +1,101 @@
+.header {
+	background: var(--header-background);
+	&__block {
+		padding: 32px 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@media (max-width: 767px) {
+			padding: 40px 0;
+			flex-direction: column;
+		}
+	}
+	&__person {
+		display: flex;
+		align-items: center;
+		gap: 24px;
+	}
+	&__person-image {
+		width: 96px;
+		height: 96px;
+		object-fit: cover;
+		border-radius: 100%;
+		@media (max-width: 767px) {
+			width: 80px;
+			height: 80px;
+		}
+	}
+	&__person-info {
+		display: flex;
+		flex-direction: column;
+	}
+	&__person-name {
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 150%;
+		color: var(--header-name);
+		@media (max-width: 991px) {
+			font-size: 30px;
+		}
+		@media (max-width: 575px) {
+			font-size: 24px;
+		}
+		@media (max-width: 374px) {
+			font-size: 20px;
+		}
+	}
+	&__person-specialization {
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 150%;
+		color: var(--header-specialization);
+		@media (max-width: 991px) {
+			font-size: 16px;
+		}
+	}
+	&__link {
+		padding: 16.5px 40px;
+		border-radius: 64px;
+		background: var(--header-btn-bg);
+		position: relative;
+		overflow: hidden;
+		transition: 0.2s ease-in-out;
+		&:before {
+			content: "";
+			background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5));
+			height: 60px;
+			width: 50px;
+			position: absolute;
+			top: 0px;
+			left: -80px;
+			transform: skewX(-45deg);
+		}
+		&:hover {
+			background: var(--header-btn-bg);
+		}
+		&:hover:before {
+			left: 100%;
+			transition: 0.5s ease-in-out;
+		}
+		&:focus {
+			background: var(--header-btn-bg);
+			outline: none;
+		}
+		@media (max-width: 767px) {
+			margin-top: 24px;
+			padding: 16.5px 74px;
+		}
+		@media (max-width: 374px) {
+			padding: 16.5px 50px;
+		}
+	}
+	&__link-text {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 130%;
+		color: var(--header-btn-text);
+		@media (max-width: 374px) {
+			font-size: 22px;
+		}
+	}
+}
